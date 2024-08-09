@@ -12,7 +12,7 @@ import { createInvoice } from '@/app/lib/actions';
 import { useActionState } from 'react';
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
-  const [state, formAction]=useActionState(createInvoice,initialState);
+  //const [state, formAction]=useActionState(createInvoice,initialState);
   return (
     <form action={createInvoice}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
